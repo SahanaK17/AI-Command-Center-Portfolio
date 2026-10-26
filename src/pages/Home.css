@@ -1,0 +1,14 @@
+/* Home page layout */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+}

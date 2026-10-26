@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import Hero from './components/Hero';
+import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
@@ -24,24 +24,24 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <header className="main-header">
-          <nav className="nav-bar">
-            <Link to="/" className="nav-logo">Sahana K.</Link>
-            <ul className="nav-links">
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/skills">Skills</Link></li>
-              <li><Link to="/experience">Experience</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-            <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-              {theme === 'dark' ? '🌞' : '🌙'}
-            </button>
-          </nav>
-        </header>
+          <header className="main-header">
+            <nav className="nav-bar">
+              <Link to="/" className="nav-logo">Sahana K.</Link>
+              <ul className="nav-links">
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/projects">Projects</Link></li>
+                <li><Link to="/skills">Skills</Link></li>
+                <li><Link to="/experience">Experience</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+              </ul>
+              <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+                {theme === 'dark' ? '🌞' : '🌙'}
+              </button>
+            </nav>
+          </header>
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<Hero />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />

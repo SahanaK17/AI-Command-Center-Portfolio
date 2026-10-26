@@ -51,6 +51,44 @@
   transform: translateY(-2px);
 }
 
+.hero-status {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.guide-bubble {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 250px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+}
+
+.guide-bubble p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.bubble-button {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+.bubble-button:hover {
+  transform: translateY(-1px);
+}
+
 .hero-illustration img {
   max-width: 250px;
   border-radius: 0.5rem;

@@ -8,15 +8,19 @@ const Hero: React.FC = () => {
     <section className="hero-section">
       <div className="hero-content">
         <h1 className="hero-title">Sahana K.</h1>
-        <p className="hero-tagline">AI/ML + Software Engineer</p>
+        <p className="hero-tagline">AI/ML Engineer | Software Engineer</p>
+        <p className="hero-status">Exploring • Building • Learning</p>
         <div className="hero-actions">
-          <Link to="/projects" className="hero-button primary">Explore Projects</Link>
-          <Link to="/about" className="hero-button secondary">View Resume</Link>
-          <Link to="/contact" className="hero-button secondary">Contact Me</Link>
+          <Link to="/projects" className="hero-button primary">Explore My Projects</Link>
+          <Link to="/about" className="hero-button secondary">Meet Your Guide</Link>
         </div>
       </div>
       <div className="hero-illustration">
         <img src={guideImg} alt="AI Portfolio Guide" />
+        <div className="guide-bubble">
+          <p>Hi, I’m your guide to Sahana’s world. Let’s explore her AI projects, skills, and journey.</p>
+          <Link to="/about" className="hero-button secondary bubble-button">Start Tour</Link>
+        </div>
       </div>
     </section>
   );
