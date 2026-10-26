@@ -1,0 +1,22 @@
+/* About page styling */
+
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(5px);
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.about-section p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}

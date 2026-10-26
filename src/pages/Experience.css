@@ -1,0 +1,61 @@
+/* Experience page styling */
+
+.experience-section {
+  padding: 2rem;
+}
+
+.experience-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.timeline {
+  position: relative;
+  margin-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 0.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.timeline-content h3 {
+  margin: 0.2rem 0;
+  color: #fff;
+}
+
+.timeline-content p {
+  margin: 0.2rem 0;
+  color: var(--text);
+  line-height: 1.4;
+}
+
